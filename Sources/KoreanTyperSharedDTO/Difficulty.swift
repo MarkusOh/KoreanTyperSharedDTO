@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum Difficulty: String, Codable {
-    case easy = "Easy", 
+public enum Difficulty: String, Codable {
+    case easy = "Easy",
          normal = "Normal",
          hard = "Hard",
          expert = "Expert",
