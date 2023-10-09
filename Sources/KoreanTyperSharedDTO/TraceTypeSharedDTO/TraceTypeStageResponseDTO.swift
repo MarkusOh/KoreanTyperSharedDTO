@@ -1,6 +1,6 @@
 import Foundation
 
-public struct TraceTypeStageResponseDTO {
+public struct TraceTypeStageResponseDTO: Codable {
     public let id: UUID
     public let isOfficial: Bool
     public let name: String
