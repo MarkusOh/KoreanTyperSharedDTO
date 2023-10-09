@@ -1,10 +1,3 @@
-//
-//  RegisterResponseDTO.swift
-//  KoreanTyper
-//
-//  Created by Seungsub Oh on 2023/10/03.
-//
-
 import Foundation
 
 public struct RegisterResponseDTO: Codable {

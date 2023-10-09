@@ -1,10 +1,3 @@
-//
-//  File.swift
-//  
-//
-//  Created by Seungsub Oh on 2023/10/02.
-//
-
 import Foundation
 
 public struct LoginResponseDTO: Codable {
