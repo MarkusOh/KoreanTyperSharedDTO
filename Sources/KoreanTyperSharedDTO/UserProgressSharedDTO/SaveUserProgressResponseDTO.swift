@@ -1,11 +1,15 @@
 import Foundation
 
-public struct SaveUserProgressResponseDTO: Codable {
-    public let error: Bool
-    public var reason: String?
+public struct SaveUserProgressResponseDTO: Codable, Identifiable {
+    public let id: UUID
+    public let stageId: UUID
+    public let score: Float
+    public let userProgressId: UUID
     
-    public init(error: Bool, reason: String? = nil) {
-        self.error = error
-        self.reason = reason
+    public init(id: UUID, stageId: UUID, score: Float, userProgressId: UUID) {
+        self.id = id
+        self.stageId = stageId
+        self.score = score
+        self.userProgressId = userProgressId
     }
 }
