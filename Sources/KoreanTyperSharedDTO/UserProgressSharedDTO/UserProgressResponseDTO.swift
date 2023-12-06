@@ -2,12 +2,12 @@ import Foundation
 
 public struct UserProgressResponseDTO: Codable {
     public let id: UUID
-    public let clearedStagesTraceType: [UUID]
-    public let clearedStagesBombWords: [UUID]
+    public let TraceTypeStageScores: [StageScoreResponseDTO]
+    public let BombWordsStageScores: [StageScoreResponseDTO]
     
-    public init(id: UUID, clearedStagesTraceType: [UUID], clearedStagesBombWords: [UUID]) {
+    public init(id: UUID, TraceTypeStageScores: [StageScoreResponseDTO], BombWordsStageScores: [StageScoreResponseDTO]) {
         self.id = id
-        self.clearedStagesTraceType = clearedStagesTraceType
-        self.clearedStagesBombWords = clearedStagesBombWords
+        self.TraceTypeStageScores = TraceTypeStageScores
+        self.BombWordsStageScores = BombWordsStageScores
     }
 }
